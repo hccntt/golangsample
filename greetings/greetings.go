@@ -28,7 +28,10 @@ func randomFormat() string {
 		"Hail, %v! Well met!",
 	}
 
+	// Generate a random Int type number between 0 and 3
+	randNum := rand.Intn(2)
+	fmt.Println(randNum)
 	// Return a randomly selected message format by specifying a random index
 	// for the slice of formats.
-	return formats[rand.Intn(len(formats))]
+	return formats[randNum]
 }
